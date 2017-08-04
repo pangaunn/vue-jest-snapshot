@@ -17,7 +17,7 @@ describe('ShoppingList component', () => {
     })
   })
 
-  test('click', () => {
+  test('done click', () => {
     let lis = $mounted.$el.querySelectorAll('li')
     let button = lis[2].querySelector('button')
     let customEvent = new Event('click')
