@@ -4,7 +4,7 @@
       {{ item.text }}
       <button @click="complete(index)">Done</button>
     </li>
-    <input type="text" v-model="newItem"/><button @click="add">+</button>
+    <input type="text" v-model="newItem" id="newItem"/><button @click="add" id="addBtn">+</button>
   </ul>
 </template>
 

@@ -1,13 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ShoppingList component click 1`] = `
+exports[`ShoppingList component add new item 1`] = `
+"<ul class=\\"shopping-list\\"><li class=\\"done\\">
+      Beer
+      <button>Done</button></li><li class=\\"\\">
+      Milk
+      <button>Done</button></li><li class=\\"\\">
+      Apple
+      <button>Done</button></li><li class=\\"\\">
+      NEW ITEM
+      <button>Done</button></li> <input type=\\"text\\" id=\\"newItem\\"><button id=\\"addBtn\\">+</button></ul>"
+`;
+
+exports[`ShoppingList component done click 1`] = `
 "<ul class=\\"shopping-list\\"><li class=\\"done\\">
       Beer
       <button>Done</button></li><li class=\\"\\">
       Milk
       <button>Done</button></li><li class=\\"done\\">
       Apple
-      <button>Done</button></li></ul>"
+      <button>Done</button></li> <input type=\\"text\\" id=\\"newItem\\"><button id=\\"addBtn\\">+</button></ul>"
 `;
 
 exports[`ShoppingList component snapshot 1`] = `
@@ -17,7 +29,7 @@ exports[`ShoppingList component snapshot 1`] = `
       Milk
       <button>Done</button></li><li class=\\"\\">
       Apple
-      <button>Done</button></li></ul>"
+      <button>Done</button></li> <input type=\\"text\\" id=\\"newItem\\"><button id=\\"addBtn\\">+</button></ul>"
 `;
 
 exports[`ShoppingList component snapshot 2`] = `
@@ -27,5 +39,7 @@ exports[`ShoppingList component snapshot 2`] = `
       Milk
       <button>Done</button></li><li class=\\"\\">
       Apple
-      <button>Done</button></li></ul>"
+      <button>Done</button></li> <input type=\\"text\\" id=\\"newItem\\"><button id=\\"addBtn\\">+</button></ul>"
 `;
+
+exports[`true 1`] = `true`;

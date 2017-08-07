@@ -8,6 +8,7 @@ describe('ShoppingList component', () => {
   })
 
   test('snapshot', () => {
+    expect(true).toMatchSnapshot(true)
     let $html = $mounted.$el.outerHTML
     expect($html).toMatchSnapshot()
     $mounted.items[1].done = true
@@ -26,6 +27,17 @@ describe('ShoppingList component', () => {
     Vue.nextTick(() => {
       let $html = $mounted.$el.outerHTML
       expect($html).toMatchSnapshot()
+    })
+  })
+
+  test('add new item', () => {
+    $mounted.newItem = 'NEW ITEM'
+    Vue.nextTick(() => {
+      let button = $mounted.$el.querySelector('#addBtn').click()
+      Vue.nextTick(() => {
+        let $html = $mounted.$el.outerHTML
+        expect($html).toMatchSnapshot()
+      })
     })
   })
 })
