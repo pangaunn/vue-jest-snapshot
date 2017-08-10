@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     complete (index) {
-      this.items[index].done = true
+      this.items[index].done = !this.items[index].done
     },
     add () {
       if (this.newItem !== '') {
@@ -36,3 +36,9 @@ export default {
   }
 }
 </script>
+
+<style>
+  .done {
+    color: red;
+  }
+</style>
