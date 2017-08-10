@@ -15,6 +15,12 @@ describe('ShoppingList component', () => {
     Vue.nextTick(() => {
       $html = $mounted.$el.outerHTML
       expect($html).toMatchSnapshot()
+
+      $mounted.items[1].done = false
+      Vue.nextTick(() => {
+        $html = $mounted.$el.outerHTML
+        expect($html).toMatchSnapshot()
+      })
     })
   })
 
